@@ -20,7 +20,7 @@ az account set --subscription [Name or ID of subscription]
 ```
 
 Let's create a _resource group_ called `pk-rg-bazel-01` within the _West Europe_ region:
-az 
+
 ```text
 az group create --name pk-rg-bazel-01 --location westeurope
 ```
@@ -40,7 +40,7 @@ az vm create \
 You can easily retrieve the public IP address of VM with the following command:
 
 ```text
-az vm show --show-details --resource-group pk-rg-bazel-01 --name pk-vm-bazel-01 | jq '.publicIps' | tr -d '"'
+az vm show --show-details --resource-group pk-rg-bazel-01 --name pk-vm-bazel-01 | jq '.publicIps'
 ```
 
 You can then easily connect to the VM using SSH:
@@ -51,6 +51,6 @@ ssh radicel@[Public IP adrress]
 
 ## References
 
-Aubout Bazel. (2022, August 16). _Intro to Bazel_. Available at <https://bazel.build/about/intro>
+About Bazel. (2022, August 16). _Intro to Bazel_. Available at <https://bazel.build/about/intro>
 
-Aubout Bazel. (2022, August 16). _FAQ_. Available at <https://bazel.build/about/faq>
+About Bazel. (2022, August 16). _FAQ_. Available at <https://bazel.build/about/faq>
